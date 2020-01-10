@@ -27,21 +27,21 @@
  length(ejemplos[ejemplos=="negativo"])
  
  #Ejercicio 4: 
- mas_un_punto <-c(2:6)
- menos_un_punto <-c("A","J","Q","K",10)
- cero_puntos <-c(7:9)
  cuenta <-0 
- variable_x <-mas_un_punto
- for (i in 1:length(Cartas_contadas)){ for (n in 1:length(variable_x))}
-         if(Cartas_contadas[i]==mas_un_punto[n]){cuenta<-cuenta+1}
-         variable_x<-menos_un_punto
-         for(n in 1:length(variable_x)){
-                 if(Cartas_contadas[i]==menos_un_punto[n]){cuenta<-cuenta-1}
-         }
+Cartas_contadas<-sample(c(1:13),31,replace = TRUE)
+for (i in 1:length(Cartas_contadas)){
+        if(Cartas_contadas[i]==2|Cartas_contadas[i]==3|Cartas_contadas[i]==4|Cartas_contadas[i]==5|Cartas_contadas[i]==6){
+cuenta<-cuenta+1                
+        }else if (Cartas_contadas[i]==1|Cartas_contadas[i]==10|Cartas_contadas[i]==11|Cartas_contadas[i]==12|Cartas_contadas[i]==13){
+        cuenta<-cuenta-1        
+        }else if (Cartas_contadas[i]==7|Cartas_contadas[i]==8|Cartas_contadas==9){
+        cuenta<-cuenta+0        
+        }
+}
  
 #Ejercicio 5:
- Cartas_contadas=sample(c("A",2:10,"J","Q","K"),31,replace=TRUE)
  set.seed(31)
+ Cartas_contadas=sample(c("A",2:10,"J","Q","K"),31,replace=TRUE)
  Contar<-0
  for (i in 1:length(Cartas_contadas)){
          if(Cartas_contadas[i]==2|Cartas_contadas[i]==3|Cartas_contadas[i]==4|Cartas_contadas[i]==5|Cartas_contadas[i]==6) {
