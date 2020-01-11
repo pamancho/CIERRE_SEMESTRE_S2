@@ -21,7 +21,8 @@ al no considerar los neutros la diferencia entre positivo y negativo aumentaria.
 #Pregunta 4:
 Con el sistema de conteo Hi-lo, se cuentan los puntos asignados a las diferentes cartas. Esto se realiza con el código "if",
 con el fin de contar los puntos a travez de la variable "cuenta". A esta variable se le suma o resta un punto dependiendo de la carta que salga. 
+Como resultado se obtuvo una cuenta de 4, es decir, es muy propable que las cartas que estan por salir sean mayoritariamnete bajas. 
 
 #Pregunta 5: 
-Se utilizaron los códigos "for" e "if", pero en conjuto del código "set.seed(31)". en ambos caso el conteo fue de -7.
-Por consecuencia se puede concluir que ambos grupos de cartas tienen la misma probabilidad de salir.
+Se utilizaron los códigos "for" e "if", pero en conjuto del código "set.seed(31)". En este caso el conteo fue de -7.
+Por consecuencia se puede concluir que en este mazo es muy probable que queden mayoritariamnete cartas altas.
